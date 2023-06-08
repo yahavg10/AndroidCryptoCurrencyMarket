@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "67577008165",
+    "project_id": "mystockmarketdb",
+    "storage_bucket": "mystockmarketdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67577008165:android:a54e0b0032f864711cefcc",
+        "android_client_info": {
+          "package_name": "com.example.mystockmarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "67577008165-3gn800uah842bafqij2lt2pqp7kvthh5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-yzPkyn9r1takGHWVM0ZrRoJh8hnEAOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "67577008165-3gn800uah842bafqij2lt2pqp7kvthh5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

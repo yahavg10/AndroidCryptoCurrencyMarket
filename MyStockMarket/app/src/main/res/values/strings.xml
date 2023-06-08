@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MyStockMarket</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_forgot">ForgotActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_stock_chart">StockChartActivity</string>
+    <string name="title_activity_coin">CoinActivity</string>
+    <string name="title_activity_coin_graph">CoinGraphActivity</string>
+    <string name="title_activity_watch_list">WatchListActivity</string>
+
+    <string name="action_Year">Year</string>
+    <string name="action_Month">Month</string>
+    <string name="action_Day">Day</string>
+</resources>

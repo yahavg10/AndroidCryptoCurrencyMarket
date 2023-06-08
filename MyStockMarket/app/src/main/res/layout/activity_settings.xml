@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    android:background="@drawable/backnew"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="14dp"
+            android:src="@drawable/arrow_left"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/profile"/>
+
+            <TextView
+                android:id="@+id/usernameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Guest"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingStart="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/settings_round_back_shape"
+                android:text="Edit App Settings"
+                android:textColor="@color/primary"
+                android:textAllCaps="false"
+                android:paddingEnd="30dp"/>
+
+            <LinearLayout
+                android:background="@drawable/containers_round"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <!--Change Name-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="12dp"
+                        android:src="@drawable/nameicon"
+                        android:background="@drawable/roundbackbtn3"/>
+                    <TextView
+                        android:id="@+id/changeNameText"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="            Change UserName"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="17dp"/>
+                </RelativeLayout>
+
+                <!--Change Email-->
+                <RelativeLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="12dp"
+                        android:src="@drawable/emailicon"
+                        android:background="@drawable/roundbackbtn1"/>
+                    <TextView
+                        android:id="@+id/changeEmailText"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="            Change Email"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="17dp"/>
+                </RelativeLayout>
+
+                <!--Change password-->
+                <RelativeLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="53dp"
+                        android:layout_height="50dp"
+                        android:padding="12dp"
+                        android:src="@drawable/passicon"
+                        android:background="@drawable/roundbackbtn2"/>
+                    <TextView
+                        android:id="@+id/changePasswordText"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="            Change Password"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="17dp"/>
+                </RelativeLayout>
+
+                <!--Change phone-->
+                <RelativeLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="53dp"
+                        android:layout_height="50dp"
+                        android:padding="12dp"
+                        android:src="@drawable/phoneicon"
+                        android:background="@drawable/roundbackbtn4"/>
+                    <TextView
+                        android:id="@+id/changePhoneText"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="            Change Phone Number"
+                        android:textColor="@color/white"
+                        android:textSize="17dp"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="53dp"
+                        android:layout_height="50dp"
+                        android:padding="12dp"
+                        android:src="@drawable/baseline_question_mark_24"
+                        android:background="@drawable/roundbackbtn5"/>
+                    <TextView
+                        android:id="@+id/Abouttxt"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="            About us"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="17dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp">
+
+        <ImageView
+            android:layout_width="415dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp" />
+
+        <ImageView
+            android:id="@+id/home_navigationS"
+            android:layout_width="38dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/baseline_home_24"/>
+
+
+        <ImageView
+            android:id="@+id/search_navigationS"
+            android:layout_width="38dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="101dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/baseline_search_24"/>
+
+        <ImageView
+            android:id="@+id/watchlist_navigationS"
+            android:layout_width="38dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="181dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/baseline_star_24"/>
+
+
+        <ImageView
+            android:id="@+id/settings_navigationS"
+            android:layout_width="38dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="261dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/baseline_settings_24"/>
+
+
+        <ImageView
+            android:id="@+id/Login_navigationS"
+            android:layout_width="38dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/baseline_login_24"/>
+    </RelativeLayout>
+</LinearLayout>

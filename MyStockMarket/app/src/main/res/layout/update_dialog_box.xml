@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".SettingsActivity">
+    <EditText
+        android:background="@drawable/containers_round"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="                                  Old one..."
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+
+        android:id="@+id/field1"/>
+    <EditText
+        android:background="@drawable/containers_round"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:hint="                                  New one..."
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:id="@+id/field2"/>
+</LinearLayout>

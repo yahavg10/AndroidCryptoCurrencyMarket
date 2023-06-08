@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_Year"
+        android:title="@string/action_Year"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_Month"
+        android:title="@string/action_Month"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_Day"
+        android:title="@string/action_Day"
+        app:showAsAction="never"/>
+</menu>
