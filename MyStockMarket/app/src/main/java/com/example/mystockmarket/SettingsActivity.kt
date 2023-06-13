@@ -117,9 +117,57 @@ class SettingsActivity : ComponentActivity() {
                         }
                     }
 
-                    // Similar implementation for other click listeners
-                    // ...
+                    passText.setOnClickListener{
+                        val builder = AlertDialog.Builder(this)
+                        val inflater = layoutInflater
+                        val dialogLayout = inflater.inflate(R.layout.update_dialog_box, null)
+                        val oldepassText = dialogLayout.findViewById<EditText>(R.id.field1)
+                        val newpassText = dialogLayout.findViewById<EditText>(R.id.field2)
+                        with(builder){
+                            setTitle("Enter Password here: ")
+                            setPositiveButton("OK"){dialog, which->
+                                val field = newpassText.text.toString()
+                                updatePass(usid, field)
+                            }
+                            setView(dialogLayout)
+                            show()
+                        }
 
+                    }
+                    phoneText.setOnClickListener{
+                        val builder = AlertDialog.Builder(this)
+                        val inflater = layoutInflater
+                        val dialogLayout = inflater.inflate(R.layout.update_dialog_box, null)
+                        val newphoneText = dialogLayout.findViewById<EditText>(R.id.field2)
+                        with(builder){
+                            setTitle("Enter Phone number here: ")
+                            setPositiveButton("OK"){dialog, which->
+                                val field = newphoneText.text.toString()
+                                updatePhone(usid, field)
+                            }
+                            setView(dialogLayout)
+                            show()
+                        }
+
+                    }
+                    nameText.setOnClickListener{
+                        val builder = AlertDialog.Builder(this)
+                        val inflater = layoutInflater
+                        val dialogLayout = inflater.inflate(R.layout.update_dialog_box, null)
+                        val newnameText = dialogLayout.findViewById<EditText>(R.id.field2)
+                        with(builder){
+                            setTitle("Enter Phone number here: ")
+                            setPositiveButton("OK"){dialog, which->
+                                val field = newnameText.text.toString()
+                                val textView = findViewById<TextView>(R.id.usernameText)
+                                textView.setText(newnameText.text.toString()).toString()
+                                updateName(usid, field)
+                            }
+                            setView(dialogLayout)
+                            show()
+                        }
+
+                    }
                 }
             }
         }

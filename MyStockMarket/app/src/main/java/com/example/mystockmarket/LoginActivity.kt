@@ -68,7 +68,7 @@ class LoginActivity : ComponentActivity() {
                                 } else {
                                     Toast.makeText(
                                         this,
-                                        task.exception.toString(),
+                                        task.exception.toString().drop(65),
                                         Toast.LENGTH_SHORT
                                     ).show()
                                 }

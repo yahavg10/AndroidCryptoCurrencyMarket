@@ -95,6 +95,12 @@ class MainActivity : ComponentActivity() {
                             startActivity(it1)
                         }
                     }
+                    binding.LoginNavigation.setOnClickListener{
+                        val loginIntent = Intent(this, LoginActivity::class.java).also{ it1 ->
+                            it1.putExtra("id","")
+                            startActivity(it1)
+                        }
+                    }
                 }
             }
         }
@@ -107,12 +113,6 @@ class MainActivity : ComponentActivity() {
             }
         }
 
-        binding.LoginNavigation.setOnClickListener{
-            val loginIntent = Intent(this, LoginActivity::class.java).also{ it1 ->
-                it1.putExtra("id",usid)
-                startActivity(it1)
-            }
-        }
         binding.settingsNavigation.setOnClickListener{
             val loginIntent = Intent(this, SettingsActivity::class.java).also{ it1 ->
                 it1.putExtra("id",usid)

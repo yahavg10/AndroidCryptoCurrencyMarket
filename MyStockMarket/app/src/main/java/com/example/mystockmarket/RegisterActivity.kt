@@ -102,7 +102,7 @@ class RegisterActivity : ComponentActivity() {
                                 }
                         }
                         else{
-                            Toast.makeText(this, it.exception.toString(),Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this, it.exception.toString().drop(65),Toast.LENGTH_SHORT).show()
                         }
                     }
                 }else{
